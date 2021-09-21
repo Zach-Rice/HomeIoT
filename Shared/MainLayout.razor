@@ -1,0 +1,38 @@
+@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-5">
+            <div class="intro h2">@time</div>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code {
+    private DateTime time;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await RunClock();
+        }
+    }
+    async Task RunClock()
+    {
+        while(true)
+        {
+            await Task.Delay(1000);
+            time = DateTime.Now;
+            StateHasChanged();
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+@page "/"
+@inject WeatherForecastService weather;
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                @if(weatherNow != null)
+                {
+                   <div class="h3 text-center">@weatherNow.name</div> 
+                }
+                else{
+                   <p>error</p>
+                }  
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center" onclick="location.href='/temp'">
+            <div class="card-body ">
+                <div class="card-text display-6 ">
+                    Temperature
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="openweathermap-widget-5"></div>
+
+@code {
+    private WeatherForecast weatherNow;
+    protected override async Task OnInitializedAsync()
+    {
+        weatherNow = await weather.GetWeather();
+    }
+}

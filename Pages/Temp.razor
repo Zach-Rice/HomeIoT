@@ -1,0 +1,68 @@
+@page "/temp"
+@inject ReadSerialPortService port
+@using System.Threading;
+
+<div class="row row-cols-1 row-cols-md-3  g-4">
+    <div class="col">
+        <div class="card text-center h-100 border-info">
+            <div class="card-header h2">
+                Master Bedroom
+            </div>
+            <div class="card-body">
+                <div class="card-text display-3">@temperature<span>&#176;F</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center h-100">
+            <div class="card-header h2">
+                Second Bedroom
+            </div>
+            <div class="card-body">
+                <div class="card-text display-3">
+                    60&#176;
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center h-100">
+            <div class="card-header h2">
+                Nursery
+            </div>
+            <div class="card-body">
+                <div class="card-text display-3">
+                    45&#176;
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center h-100">
+            <div class="card-header h2">
+                Living room
+            </div>
+            <div class="card-body">
+                <div class="card-text display-3">
+                    70&#176;
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string temperature { get; set; } = "0";
+   Timer _update;
+    protected override async Task OnInitializedAsync()
+    {
+        temperature = await port.GetValue();
+        _update = new Timer(state  => {InvokeAsync(UpdateTemp);}, null, 1000, 2000);
+    }
+    public async Task UpdateTemp()
+    {
+        temperature = await port.GetValue();
+        await InvokeAsync(() => StateHasChanged());
+    }
+ 
+}
