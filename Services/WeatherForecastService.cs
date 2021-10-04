@@ -17,7 +17,7 @@ public class WeatherForecastService
     public async Task<WeatherForecast> GetWeather()
     {
         var client = _clientFactory.CreateClient();
-        var response = await client.GetAsync("http://api.openweathermap.org/data/2.5/weather?zip=23464&appid=1e4dedd4fc87905bfff5c092bbe06a0d&units=imperial");
+        var response = await client.GetAsync("http://api.openweathermap.org/data/2.5/weather?zip=23464&appid=0&units=imperial");
         response.EnsureSuccessStatusCode();
         var result = await response.Content.ReadAsStringAsync();
         weather = JsonSerializer.Deserialize<WeatherForecast>(result);
