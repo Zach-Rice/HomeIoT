@@ -11,6 +11,7 @@ public class WeatherForecastService
     public bool error = false;
     private string id = "1e4dedd4fc87905bfff5c092bbe06a0d";
 
+
     public WeatherForecastService(IHttpClientFactory clientFactory)
     {
         _clientFactory = clientFactory;
@@ -19,6 +20,7 @@ public class WeatherForecastService
     {
         var client = _clientFactory.CreateClient();
         var response = await client.GetAsync($"http://api.openweathermap.org/data/2.5/weather?zip=23464&appid={id}&units=imperial");
+
         response.EnsureSuccessStatusCode();
         var result = await response.Content.ReadAsStringAsync();
         weather = JsonSerializer.Deserialize<WeatherForecast>(result);
