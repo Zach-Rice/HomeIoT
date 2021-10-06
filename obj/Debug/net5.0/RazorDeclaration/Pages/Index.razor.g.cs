@@ -105,7 +105,7 @@ using Blazor.Extensions;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 31 "C:\Users\zrice\Desktop\IOT project\HomeIoT\Pages\Index.razor"
+#line 49 "C:\Users\zrice\Desktop\IOT project\HomeIoT\Pages\Index.razor"
        
     private WeatherForecast weatherNow;
     protected override async Task OnInitializedAsync()

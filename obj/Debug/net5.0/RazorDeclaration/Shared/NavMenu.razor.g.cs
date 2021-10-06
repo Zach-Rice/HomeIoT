@@ -104,7 +104,7 @@ using Blazor.Extensions;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\zrice\Desktop\IOT project\HomeIoT\Shared\NavMenu.razor"
+#line 28 "C:\Users\zrice\Desktop\IOT project\HomeIoT\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

@@ -70,7 +70,6 @@ C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\App
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Pages\Settings.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Pages\Temp.razor.g.cs
-C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Pages\Warp.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\HomeIoT.RazorComponent.output.cache
@@ -82,7 +81,6 @@ C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\App.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Pages\Settings.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Pages\Temp.razor.g.cs
-C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Pages\Warp.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\zrice\Desktop\IOT project\HomeIoT\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
