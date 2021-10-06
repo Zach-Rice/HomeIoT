@@ -9,7 +9,7 @@ public class WeatherForecastService
     private readonly IHttpClientFactory _clientFactory;
     private WeatherForecast weather;
     public bool error = false;
-    private string id = "1e4dedd4fc87905bfff5c092bbe06a0d";
+    private string id = /*insert id*/;
 
 
     public WeatherForecastService(IHttpClientFactory clientFactory)
