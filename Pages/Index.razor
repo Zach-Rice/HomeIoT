@@ -1,32 +1,50 @@
 @page "/"
 @inject WeatherForecastService weather;
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                @if(weatherNow != null)
-                {
-                   <div class="h3 text-center">@weatherNow.name</div> 
-                }
-                else{
-                   <p>error</p>
-                }  
+<div id="container">
+    <div class="row row-cols-3">
+        <div class="col">
+            <div class="card text-center border-info h-100">
+                <div class="card-body ">
+                    @if (weatherNow != null)
+                    {
+                        <h2 id="card-title">@weatherNow.name</h2>
+                        <p class="card-text display-3">@Math.Round(weatherNow.main.temp)<span>&#176;F</span></p>
+                        <p class="card-text">@weatherNow.weather[0].description</p>
+                    }
+                    else
+                    {
+                        <p>error</p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" onclick="location.href='/temp'">
+                <div class="card-body ">
+                    <p id="card-text">Rooms</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center h-100" onclick="location.href='/temp'">
+                <div class="card-body ">
+                    <p id="card-text">Camera</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col">
-        <div class="card text-center" onclick="location.href='/temp'">
-            <div class="card-body ">
-                <div class="card-text display-6 ">
-                    Temperature
+    <br>
+    <div class="row row-cols-3">
+        <div class="col">
+            <div class="card text-center h-100" onclick="location.href='/temp'">
+                <div class="card-body ">
+                    <p id="card-text">Security</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div id="openweathermap-widget-5"></div>
 
 @code {
     private WeatherForecast weatherNow;

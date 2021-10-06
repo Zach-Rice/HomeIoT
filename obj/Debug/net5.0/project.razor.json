@@ -78,39 +78,6 @@
         }
       },
       {
-        "HashCode": 242097034,
-        "Kind": "Components.Component",
-        "Name": "HomeIoT.Pages.Warp",
-        "AssemblyName": "HomeIoT",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Warp"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "HomeIoT.Pages.Warp"
-        }
-      },
-      {
-        "HashCode": -1818479191,
-        "Kind": "Components.Component",
-        "Name": "HomeIoT.Pages.Warp",
-        "AssemblyName": "HomeIoT",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "HomeIoT.Pages.Warp"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "HomeIoT.Pages.Warp",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 185012761,
         "Kind": "Components.Component",
         "Name": "HomeIoT.App",
@@ -15903,11 +15870,6 @@
       "FilePath": "c:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\Pages\\Warp.razor",
-      "TargetPath": "Pages\\Warp.razor",
-      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\App.razor",
