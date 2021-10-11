@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "46/HO17zmvSCGWXyv7hnnUVcr7/BkqtHbAxTPaJ/DKEvtPMYbTDuPZTpT3dlFbzWhXcr3bk7Fp45o/ZHSCIyFw==",
+  "dgSpecHash": "QYgn+LTXUFiqLpyqR9ktd6g3ujQt3rogwN4L9Yy2H96VPlHET+eV4B48RqpnG0J8hrxp+7vr7x3H2IGtwXBASg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\HomeIoT.csproj",
+  "projectFilePath": "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\HomeIoT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zrice\\.nuget\\packages\\blazor.extensions.signalr\\1.0.0\\blazor.extensions.signalr.1.0.0.nupkg.sha512",
     "C:\\Users\\zrice\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.0.0\\microsoft.aspnetcore.authorization.3.0.0.nupkg.sha512",

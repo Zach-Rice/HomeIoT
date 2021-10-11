@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\HomeIoT.csproj": {}
+    "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\HomeIoT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\HomeIoT.csproj": {
+    "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\HomeIoT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\HomeIoT.csproj",
+        "projectUniqueName": "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\HomeIoT.csproj",
         "projectName": "HomeIoT",
-        "projectPath": "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\HomeIoT.csproj",
+        "projectPath": "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\HomeIoT.csproj",
         "packagesPath": "C:\\Users\\zrice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zrice\\Desktop\\IOT project\\HomeIoT\\obj\\",
+        "outputPath": "C:\\Users\\zrice\\Desktop\\IOTproject\\HomeIoT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
