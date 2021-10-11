@@ -9,7 +9,7 @@ public class WeatherForecastService
     private readonly IHttpClientFactory _clientFactory;
     private WeatherForecast weather;
     public bool error = false;
-    private string id = /*insert id*/;
+    private string id = /*insert API Key*/;
 
 
     public WeatherForecastService(IHttpClientFactory clientFactory)
@@ -18,12 +18,19 @@ public class WeatherForecastService
     }
     public async Task<WeatherForecast> GetWeather()
     {
-        var client = _clientFactory.CreateClient();
-        var response = await client.GetAsync($"http://api.openweathermap.org/data/2.5/weather?zip=23464&appid={id}&units=imperial");
-
-        response.EnsureSuccessStatusCode();
-        var result = await response.Content.ReadAsStringAsync();
-        weather = JsonSerializer.Deserialize<WeatherForecast>(result);
-        return weather;
+        try
+        {
+             var client = _clientFactory.CreateClient();
+            var response = await client.GetAsync($"http://api.openweathermap.org/data/2.5/weather?zip=23464&appid={id}&units=imperial");
+            response.EnsureSuccessStatusCode();
+            var result = await response.Content.ReadAsStringAsync();
+            weather = JsonSerializer.Deserialize<WeatherForecast>(result);
+            return weather; 
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+       
     }
 }
